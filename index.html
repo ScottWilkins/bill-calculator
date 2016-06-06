@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <title>bills, yo</title>
+  </head>
+  <body>
+     <div class="left">
+       <div class="name">
+        <input type="text" name="first" value="" placeholder="first person" id="p1-input">
+        <button type="button" id="p1">submit</button>
+      </div>
+       <h1 id="p1Name">person 1 amounts</h1>
+       <textarea name="name" rows="8" cols="40" id="left_amounts" placeholder="Enter amounts separated by a space eg: (23 45.65 123.43 ...)"></textarea>
+      </div>
+      <div class="right">
+        <div class=name>
+          <input type="text" name="last" value="" placeholder="second person" id="p2-input">
+          <button type="button" id="p2">submit</button>
+       </div>
+        <h1 id="p2Name">person 2 amounts</h1>
+        <textarea name="name" rows="8" cols="40" id="right_amounts" placeholder="Enter amounts separated by a space eg: (23 45.65 123.43 ...)"></textarea>
+       </div>
+     <div class="left"><span id="p1Tot">Person1</span> Total: <span id="p1Tots"></span>
+     </div>
+     <div class="right"><span id="p2Tot">Person2</span> Total: </span><span id="p2Tots"></span>
+     </div>
+     <div class="total">
+
+     <h1>Total: <span id="total"> </span></h1>
+     <h1 id="owes">Person 1 owes Person 2</h1>
+     </div>
+  <script type="text/javascript" src=logic.js>  </script>
+  <script type="text/javascript" src=dom.js>  </script>
+  </body>
+</html>
